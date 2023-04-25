@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    background-image: url("") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#parent,#child,#cleft,#cright{
+
+    width: 300px;
+    height: 360px;
+    box-shadow: 0 0 10px black;
+    margin: 150px auto;
+    overflow: hidden;
+    position: relative;
+}
+#parent>img{
+
+    width: inherit;
+    height: inherit;
+    transition: all 1s linear 0s;   
+}
+#parent:hover{
+    cursor: pointer;
+}
+
+#parent:hover>img{
+
+    transform: translateY(-100px);
+}
+#parent>#child{
+    background-color: yellowgreen;
+    position: absolute;
+    top: 210px;
+    left: 0px;
+    height: 60px;
+    transition: all 1s linear 0s;   
+}
+#parent:hover>#child{
+    transform: translateY(-130px);
+}
+#parent>#child>ol>li{
+    text-align: center;
+    list-style-type: none;
+}
+
+
+
+#parent>#ctop{
+    background-color: rgb(26, 37, 99);
+    position: absolute;
+    color: aliceblue;
+    top: -60px;
+    
+   
+   
+    left: 100px;
+    height: 60px;
+    width: 100px;
+    transition: all 1s linear 0s;   
+}
+#parent:hover>#ctop{
+    transform: translateY(100%);
+}
+#parent>#ctop>ol>li{
+    text-align: left;
+    list-style-type: none;
+}
+
+
+#parent>#cleft{
+    background-color: rgb(79, 95, 187);
+    position: absolute;
+    color: aliceblue;
+    top: 10px;
+    
+   
+    left: -300px;
+    height: 60px;
+    transition: all 1s linear 0s;   
+}
+#parent:hover>#cleft{
+    transform: translateX(30%);
+}
+#parent>#cleft>ol>li{
+    text-align: right;
+    list-style-type: none;
+}
+
+
+#parent>#cright{
+    background-color: rgb(26, 37, 99);
+    position: absolute;
+    color: aliceblue;
+    top: 10px;
+    
+   
+    right: -300px;
+    height: 60px;
+    transition: all 1s linear 0s;   
+}
+#parent:hover>#cright{
+    transform: translateX(-30%);
+}
+#parent>#cright>ol>li{
+    text-align: left;
+    list-style-type: none;
+}
+
